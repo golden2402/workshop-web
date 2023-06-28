@@ -34,3 +34,37 @@ ul {
     margin: 0;
     padding-left: 0;
 }
+
+/* utility: */
+
+/*  */
+.card {
+    display: flex;
+    overflow: hidden;
+
+    background-color: transparent;
+    
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+}
+
+.card.vertical {
+    flex-direction: column;
+
+    width: 16rem;
+    height: 20rem;
+}
+
+.card.horizontal {
+    width: 24rem;
+    height: 16rem;
+}
+
+.card .title {
+    flex-grow: 1;
+}
+
+.card .blurb {
+    
+}
+
