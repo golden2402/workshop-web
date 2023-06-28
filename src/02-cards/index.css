@@ -82,13 +82,22 @@ img {
     display: inline-flex;
 }
 
-.card .title {
+.card .display {
     flex-grow: 1;
 }
 
 .card .blurb {
     padding: 0.8rem;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card .blurb .title {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.card .blurb p {
+    font-size: 0.8rem;
 }
 
 .card.horizontal .blurb {
