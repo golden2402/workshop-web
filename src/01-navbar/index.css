@@ -4,7 +4,8 @@
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 p,
@@ -37,6 +38,10 @@ button {
     color: var(--primary-text);
 }
 
+.shadow-md {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
 .rounded-md {
     border-radius: 0.3em;    
 }
@@ -54,6 +59,9 @@ header .title {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
+
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 header .mobile-nav {
@@ -65,7 +73,8 @@ header nav {
 }
 
 header .cta {
-    padding: 0.2rem;
+    padding: 0.4rem;
+    font-weight: 500;
 }
 
 header .mobile-nav {
