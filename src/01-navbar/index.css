@@ -1,0 +1,69 @@
+body {
+    margin: 0
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+button {
+    background-color: inherit;
+	color: inherit;
+	font: inherit;
+	outline: inherit;
+
+	border: none;
+	padding: 0;
+    
+    cursor: pointer;
+}
+
+/* utility: */
+.rounded-md {
+    border-radius: 0.5em;    
+}
+
+.rounded-lg {
+    border-radius: 0.75em;
+}
+
+/*  */
+header {
+    box-sizing: border-box;
+}
+
+header .title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+header .mobile-nav {
+    display: none;
+}
+
+header nav {
+    
+}
+
+header .cta {
+
+}
+
+header .mobile-nav {
+
+}
+
+@media screen and (max-width: 640px) {
+    header .mobile-nav {
+        display: block;
+    }
+}
