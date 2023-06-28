@@ -80,9 +80,7 @@ img {
 
 .card.vertical {
     flex-direction: column;
-
     width: 18rem;
-    min-height: 20rem;
 }
 
 .card.horizontal {
@@ -90,7 +88,14 @@ img {
 }
 
 .card .display {
+    display: flex;
     flex-grow: 1;
+
+    max-height: 16rem;
+}
+
+.card .display img {
+    object-fit: cover;
 }
 
 .card .blurb {
@@ -105,6 +110,11 @@ img {
 
 .card .blurb p {
     font-size: 0.8rem;
+}
+
+.card.horizontal .display {
+    margin: auto 0;
+    max-width: 16rem;
 }
 
 .card.horizontal .blurb {
