@@ -65,6 +65,14 @@ ul {
 }
 
 .card .blurb {
-    
+    padding: 0.8rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+.card.horizontal .blurb {
+    max-width: 60%;
+}
+
+.card.vertical .blurb {
+    max-height: 60%;
+}
