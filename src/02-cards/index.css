@@ -42,6 +42,13 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+    
+    width: 100%;
+    height: auto;
+}
+
 /* utility: */
 .primary {
     background-color: var(--primary-background);
@@ -67,13 +74,12 @@ ul {
 .card.vertical {
     flex-direction: column;
 
-    width: 16rem;
+    width: 18rem;
     min-height: 20rem;
 }
 
 .card.horizontal {
-    width: 24rem;
-    min-height: 16rem;
+    display: inline-flex;
 }
 
 .card .title {
@@ -86,9 +92,9 @@ ul {
 }
 
 .card.horizontal .blurb {
-    max-width: 60%;
+    max-width: 32rem;
 }
 
 .card.vertical .blurb {
-    max-height: 60%;
+    max-height: 48rem;
 }
