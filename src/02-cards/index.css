@@ -1,3 +1,10 @@
+:root {
+    --primary-background: white;
+    --primary-color: black;
+    --secondary-background: #27272a;
+    --secondary-color: #e5e5e5;
+}
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -36,11 +43,20 @@ ul {
 }
 
 /* utility: */
+.primary {
+    background-color: var(--primary-background);
+    color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-background);
+    color: var(--secondary-color);
+}
 
 /*  */
 .card {
     display: flex;
-    overflow: hidden;
+    overflow: auto;
 
     background-color: transparent;
     
