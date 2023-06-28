@@ -1,8 +1,8 @@
 :root {
     --primary-background: white;
     --primary-color: black;
-    --secondary-background: #27272a;
-    --secondary-color: #e5e5e5;
+    --secondary-background: #fafaf9;
+    --secondary-color: #0a0a0a;
 }
 
 body {
@@ -66,9 +66,16 @@ img {
     overflow: auto;
 
     background-color: transparent;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
     
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     border-radius: 0.25rem;
+
+    transition: box-shadow 0.2s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .card.vertical {
