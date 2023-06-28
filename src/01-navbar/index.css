@@ -32,6 +32,14 @@ button {
     cursor: pointer;
 }
 
+ul {
+    list-style: none;
+    list-style-type: none;
+    
+    margin: 0;
+    padding-left: 0;
+}
+
 /* utility: */
 .primary {
     background-color: var(--primary);
@@ -65,7 +73,7 @@ header .title {
 }
 
 header .mobile-nav {
-    display: none;
+    display: block;
 }
 
 header nav {
@@ -81,8 +89,12 @@ header .mobile-nav {
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+    }
+
     header .mobile-nav {
-        display: block;
+        display: none;
     }
 }
