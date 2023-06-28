@@ -62,7 +62,6 @@ img {
 
 /*  */
 .card {
-    display: flex;
     overflow: auto;
 
     background-color: transparent;
@@ -79,12 +78,15 @@ img {
 }
 
 .card.vertical {
+    display: flex;
     flex-direction: column;
+    
     width: 18rem;
 }
 
 .card.horizontal {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
 }
 
 .card .display {
