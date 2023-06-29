@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p,
@@ -43,3 +47,27 @@ img {
 /* utility: */
 
 /*  */
+[data-tooltip] {
+    /* scoped: */
+    --width: 8rem;
+    position: relative;
+}
+
+[data-tooltip]::after {
+    position: absolute;
+    box-sizing: border-box;
+
+    /* like an anchor point--works because of the positioning attributes! */
+    left: calc(50% - var(--width) / 2);
+    bottom: calc(100% + 0.4rem);
+    
+    width: var(--width);
+    padding: 0.4rem;
+    
+    content: attr(data-tooltip);
+    font-size: 0.8em;
+}
+
+[data-tooltip]:hover::after {
+
+}
