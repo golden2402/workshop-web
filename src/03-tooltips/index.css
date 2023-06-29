@@ -50,6 +50,7 @@ img {
 [data-tooltip] {
     /* scoped: */
     --width: 8rem;
+    --placement-offset: 0.2rem;
 
     --background-color: #262626;
     --color: #fafafa;
@@ -67,7 +68,7 @@ img {
 
     /* like an anchor point--works because of the positioning attributes! */
     left: 50%;
-    transform: translate(-50%, -0.2rem);
+    transform: translate(-50%, calc(var(--placement-offset, 0.2rem) * -1));
     bottom: calc(100% + 0.4rem);
     
     width: max-content;
@@ -95,4 +96,11 @@ img {
 
     opacity: 1;
     transform: translate(-50%, 0);
+}
+
+[data-tooltip-bottom]::after {
+    top: calc(100% + 0.4rem);
+    bottom: initial;
+
+    transform: translate(-50%, var(--placement-offset, 0.2rem));
 }
