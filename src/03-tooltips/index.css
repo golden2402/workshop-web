@@ -66,14 +66,17 @@ img {
     box-sizing: border-box;
 
     /* like an anchor point--works because of the positioning attributes! */
-    left: calc(50% - var(--width) / 2);
+    left: 50%;
+    transform: translate(-50%, -0.2rem);
     bottom: calc(100% + 0.4rem);
     
-    width: var(--width);
+    width: max-content;
+    max-width: var(--width);
     padding: 0.4rem;
     
     content: attr(data-tooltip);
     font-size: 0.8em;
+    hyphens: auto;
 
     background-color: var(--background-color);
     color: var(--color);
@@ -81,7 +84,6 @@ img {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 
     opacity: 0;
-    transform: translateY(-0.2rem);
     
     transition: 
         opacity 0.3s ease,
@@ -92,5 +94,5 @@ img {
     visibility: visible;
 
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
 }
