@@ -5,6 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 p,
@@ -103,4 +104,18 @@ img {
     bottom: initial;
 
     transform: translate(-50%, var(--placement-offset, 0.2rem));
+}
+
+[data-tooltip-right]::after {
+    top: 50%;
+    bottom: initial;
+    left: 100%;
+
+    margin-left: calc(var(--placement-offset, 0.2rem) * 2);
+
+    transform: translate(var(--placement-offset, 0.2rem), -50%);
+}
+
+[data-tooltip-right]:hover::after {
+    transform: translateY(-50%);
 }

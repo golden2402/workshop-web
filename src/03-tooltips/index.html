@@ -12,14 +12,30 @@
 </head>
 
 <body style="min-height: 100vh;">
-  <div 
-    style="margin-right: 0.25rem;"
-    data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque maxime fuga eos pariatur. Explicabo corporis obcaecati accusamus facere, molestiae est repellendus, iste qui impedit deleniti atque praesentium maiores? Alias?"
-  > 
-    From the top,
+  <div style="margin: 4rem;">
+    <span 
+      data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque maxime fuga eos pariatur. Explicabo corporis obcaecati accusamus facere, molestiae est repellendus, iste qui impedit deleniti atque praesentium maiores? Alias?"
+    > 
+      From the top,
+    </span>
+    <span data-tooltip-bottom data-tooltip="Hello world!"> 
+      and from below!
+    </span>
   </div>
-  <div data-tooltip-bottom data-tooltip="Hello world!"> 
-    and from below!
+
+  <div
+    style="margin: 0.5rem;"
+    data-tooltip-right
+    data-tooltip="Hello from the right!"
+  >
+    yooo...
+  </div>
+  <div
+    style="margin: 0.5rem;"
+    data-tooltip-left
+    data-tooltip="Hello from the left!"
+  >
+    yooo...
   </div>
 </body>
 
