@@ -119,3 +119,18 @@ img {
 [data-tooltip-right]:hover::after {
     transform: translateY(-50%);
 }
+
+[data-tooltip-left]::after {
+    top: 50%;
+    bottom: initial;
+    right: 100%;
+    left: auto;
+
+    margin-right: calc(var(--placement-offset, 0.2rem) * 2);
+
+    transform: translate(calc(var(--placement-offset, 0.2rem) * -1), -50%);
+}
+
+[data-tooltip-left]:hover::after {
+    transform: translateY(-50%);
+}
