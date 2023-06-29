@@ -59,6 +59,9 @@ img {
 }
 
 [data-tooltip]::after {
+    /* different from display!: */
+    visibility: hidden;
+
     position: absolute;
     box-sizing: border-box;
 
@@ -75,9 +78,19 @@ img {
     background-color: var(--background-color);
     color: var(--color);
     border-radius: 0.25rem;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+    transform: translateY(-0.2rem);
+    
+    transition: 
+        opacity 0.3s ease,
+        transform 0.2s;
 }
 
 [data-tooltip]:hover::after {
+    visibility: visible;
 
+    opacity: 1;
+    transform: translateY(0);
 }
