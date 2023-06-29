@@ -70,7 +70,9 @@ img {
     /* like an anchor point--works because of the positioning attributes! */
     left: 50%;
     transform: translate(-50%, calc(var(--placement-offset, 0.2rem) * -1));
-    bottom: calc(100% + 0.4rem);
+    bottom: 100%;
+
+    margin: 0.2rem;
     
     width: max-content;
     max-width: var(--width);
@@ -100,7 +102,7 @@ img {
 }
 
 [data-tooltip-bottom]::after {
-    top: calc(100% + 0.4rem);
+    top: 100%;
     bottom: initial;
 
     transform: translate(-50%, var(--placement-offset, 0.2rem));
@@ -110,8 +112,6 @@ img {
     top: 50%;
     bottom: initial;
     left: 100%;
-
-    margin-left: calc(var(--placement-offset, 0.2rem) * 2);
 
     transform: translate(var(--placement-offset, 0.2rem), -50%);
 }
@@ -125,8 +125,6 @@ img {
     bottom: initial;
     right: 100%;
     left: auto;
-
-    margin-right: calc(var(--placement-offset, 0.2rem) * 2);
 
     transform: translate(calc(var(--placement-offset, 0.2rem) * -1), -50%);
 }
