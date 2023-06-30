@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+button {
+    background-color: inherit;
+	color: inherit;
+	font: inherit;
+	outline: inherit;
+
+	border: none;
+	padding: 0;
+    
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* utility: */
+
+/*  */
